@@ -25,7 +25,7 @@ class MainParams(bitcoin.core.CoreMainParams):
                  ('seed3.sperocoin.org', 'seed4.sperocoin.org'))
     BASE58_PREFIXES = {'PUBKEY_ADDR':63,
                        'SCRIPT_ADDR':5,
-                       'SECRET_KEY' :128}
+                       'SECRET_KEY' :191}
     BECH32_HRP = 'spr'
 
 class TestNetParams(bitcoin.core.CoreTestNetParams):
