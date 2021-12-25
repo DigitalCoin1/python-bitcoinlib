@@ -18,19 +18,15 @@ import bitcoin.core
 __version__ = '0.11.1dev'
 
 class MainParams(bitcoin.core.CoreMainParams):
-    MESSAGE_START = b'\xf9\xbe\xb4\xd9'
-    DEFAULT_PORT = 8333
-    RPC_PORT = 8332
-    DNS_SEEDS = (('bitcoin.sipa.be', 'seed.bitcoin.sipa.be'),
-                 ('bluematt.me', 'dnsseed.bluematt.me'),
-                 ('dashjr.org', 'dnsseed.bitcoin.dashjr.org'),
-                 ('bitcoinstats.com', 'seed.bitcoinstats.com'),
-                 ('xf2.org', 'bitseed.xf2.org'),
-                 ('bitcoin.jonasschnelli.ch', 'seed.bitcoin.jonasschnelli.ch'))
-    BASE58_PREFIXES = {'PUBKEY_ADDR':0,
+    MESSAGE_START = b'\x2d\x3f\xa2\xf5'
+    DEFAULT_PORT = 55680
+    RPC_PORT = 55681
+    DNS_SEEDS = (('seed1.sperocoin.org', 'seed2.sperocoin.org'),
+                 ('seed3.sperocoin.org', 'seed4.sperocoin.org'))
+    BASE58_PREFIXES = {'PUBKEY_ADDR':63,
                        'SCRIPT_ADDR':5,
                        'SECRET_KEY' :128}
-    BECH32_HRP = 'bc'
+    BECH32_HRP = 'spr'
 
 class TestNetParams(bitcoin.core.CoreTestNetParams):
     MESSAGE_START = b'\x0b\x11\x09\x07'
